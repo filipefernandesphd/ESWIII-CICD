@@ -1,9 +1,9 @@
 const { listarUsuarios, buscarUsuarioPorId } = require('../controllers/userController');
 
 describe('Controlador de Usuários', () => {
-  test('deve retornar uma lista com 3 usuários', () => {
+  test('deve retornar uma lista com 4 usuários', () => {
     const lista = listarUsuarios();
-    expect(lista).toHaveLength(3);
+    expect(lista).toHaveLength(4);
     expect(lista[0]).toHaveProperty('nome');
     expect(lista[1].email).toBe('bob@example.com');
   });
