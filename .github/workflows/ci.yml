@@ -1,0 +1,33 @@
+# Nome da pipeline que aparecerá na aba "Actions" do GitHub
+name: CI - Testes Automatizados
+
+# Define quando a pipeline será executada
+on:
+  push:                   # Sempre que houver push...
+    branches: [ main ]    # ... na branch main
+  pull_request:           # Ou sempre que houver pull request...
+    branches: [ main ]    # ... direcionado à branch main
+
+# Define o(s) job(s) a serem executados
+jobs:
+  run-tests:                  # Nome interno do job
+    runs-on: ubuntu-latest    # Ambiente do runner (máquina Linux no GitHub)
+
+    steps:
+      # Etapa 1: Clonar o código-fonte do repositório
+      - name: Clonar o repositório
+        uses: actions/checkout@v3
+
+      # Etapa 2: Instalar o Node.js (versão 18)
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Etapa 3: Instalar as dependências do projeto
+      - name: Instalar dependências
+        run: npm install
+
+      # Etapa 4: Executar os testes automatizados
+      - name: Executar testes
+        run: npm test
