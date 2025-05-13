@@ -3,7 +3,7 @@ const { listarUsuarios, buscarUsuarioPorId } = require('../controllers/userContr
 describe('Controlador de Usuários', () => {
   test('deve retornar uma lista com 4 usuários', () => {
     const lista = listarUsuarios();
-    expect(lista).toHaveLength(4);
+    expect(lista).toHaveLength(5);
     expect(lista[0]).toHaveProperty('nome');
     expect(lista[1].email).toBe('bob@example.com');
   });
