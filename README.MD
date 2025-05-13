@@ -2,7 +2,7 @@
 
 Projeto para exemplificar o uso de CI/CD.
 
-**Repostiório:** [https://github.com/filipefernandesphd/ESWIII-CICD](https://github.com/filipefernandesphd/ESWIII-CICD)
+**Repositório:** [https://github.com/filipefernandesphd/ESWIII-CICD](https://github.com/filipefernandesphd/ESWIII-CICD)
 
 ### Objetivos
 
