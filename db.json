@@ -4,6 +4,6 @@
     { "id": 2, "nome": "Bob", "email": "bob@example.com" },
     { "id": 3, "nome": "Carol", "email": "carol@example.com" },
     { "id": 4, "nome": "Daniel", "email": "daniel@example.com" },
-    { "id": 5, "nome": "Emanuel", "email": "emanuel@example.com" } 
+    { "id": 5, "nome": "Emanuel", "email": "emanuel@example.com" }
   ]
 }
